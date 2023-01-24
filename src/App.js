@@ -9,6 +9,7 @@ function App() {
         const res = await axios.get(
             `${process.env.REACT_APP_SERVER_URL}/hello`
         );
+        setShow(true);
         setMessage(res.data.message);
         console.log(res);
     };
