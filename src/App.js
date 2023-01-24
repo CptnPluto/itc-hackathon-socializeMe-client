@@ -1,8 +1,15 @@
 import axios from "axios";
+import { useState } from "react";
 
 function App() {
+    const [show, setShow] = useState(false);
+    const [message, setMessage] = useState("");
+
     const clickMe = async () => {
-        const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/hello`);
+        const res = await axios.get(
+            `${process.env.REACT_APP_SERVER_URL}/hello`
+        );
+        setMessage(res.data.message);
         console.log(res);
     };
 
@@ -10,6 +17,7 @@ function App() {
         <div>
             <h1>Hackathon!</h1>
             <button onClick={clickMe}>Click Me!</button>
+            {show && <h1>{message}</h1>}
         </div>
     );
 }
