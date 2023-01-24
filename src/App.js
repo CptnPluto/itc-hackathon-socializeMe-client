@@ -2,7 +2,7 @@ import axios from "axios";
 
 function App() {
     const clickMe = async () => {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/`);
+        const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/`);
         console.log(res);
     };
 
