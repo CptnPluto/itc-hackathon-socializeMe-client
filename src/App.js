@@ -9,8 +9,8 @@ function App() {
         const res = await axios.get(
             `${process.env.REACT_APP_SERVER_URL}/hello`
         );
-        setShow(true);
-        setMessage(res.data.message);
+        setShow(!show);
+        setMessage(res.data);
         console.log(res);
     };
 
