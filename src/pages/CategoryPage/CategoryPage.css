@@ -1,0 +1,11 @@
+.categoryPage{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  flex-direction: column;
+}
+.categoryPageButtons{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+}
