@@ -8,6 +8,7 @@ import attractionsSvg from "../../SVG/categories/attractions-c.svg";
 import attractionsSvgBW from "../../SVG/categories/attractions-b&w.svg";
 import outDoorsSvg from "../../SVG/categories/advanture-c.svg";
 import outDoorsSvgBW from "../../SVG/categories/advanture-b&w.svg";
+import ButtonCustom from "../../components/Button/ButtonCustom";
 import { useNavigate } from "react-router-dom";
 function CategoryPage() {
   const navigate = useNavigate();
@@ -19,35 +20,29 @@ function CategoryPage() {
   const [outDoors,setOutDoors]=useState(false)
   const handleFood = (e) => {
     e.preventDefault();
-    console.log("food");
   
     setFood(!food)
     
     
   };
 
-const backgroundStyle = "linear-gradient(217deg, #866ff3, rgba(255,0,0,0) 70.71%), linear-gradient(336deg, #df3f3f, rgba(0,0,255,0) 70.71%),linear-gradient(127deg, #ba57b2, rgba(0,255,0,0) 70.71%);"
 
 
   const handleMusic = (e) => {
     e.preventDefault();
-    console.log("music");
     
     setMusic(!music)
   };
   const handleMuseums = (e) => {
     e.preventDefault();
-    console.log("museums");
     setAttractions(!attractions)
   };
   const handleOutDoors = (e) => {
     e.preventDefault();
-    console.log("outDoors");
     setOutDoors(!outDoors)
   };
   const handleNext = (e) => {
     e.preventDefault();
-    console.log("next");
     navigate("/chooseEvent");
   };
   return (
@@ -58,7 +53,7 @@ const backgroundStyle = "linear-gradient(217deg, #866ff3, rgba(255,0,0,0) 70.71%
             <img id="catButton" src={food?foodSvg:foodSvgBW}></img>
             <div className="buttonText"> Food</div>
           </button>
-          <button onClick={handleMusic} className={music?"btnAlive":"btn"} style={{backgroundColor:music?backgroundStyle:""}}>
+          <button onClick={handleMusic} className={music?"btnAlive":"btn"} >
             <img id="catButton" src={music?musicSvg:musicSvgBW}></img>
             <div className="buttonText"> Music</div>
           </button>
@@ -77,7 +72,7 @@ const backgroundStyle = "linear-gradient(217deg, #866ff3, rgba(255,0,0,0) 70.71%
             <div className='buttonText'> Outdoors</div>
           </button>
         </div>
-        <button>Next</button>
+        <ButtonCustom buttonText={'Next'} type="submit"/>
       </form>
     </div>
   );
