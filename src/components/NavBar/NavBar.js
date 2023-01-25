@@ -38,7 +38,7 @@ export default function NavBar() {
             <button onClick={() => navigate("/chooseCategory")}>Choose Category Page</button>
             <button onClick={() => navigate("/chooseEvent")}>Choose Event Page</button>
             <button onClick={() => navigate("/")}>Landing Page</button>
-            <button onClick={() => navigate("/chooseLocation")}>Choose Locations </button>
+            <button onClick={() => navigate("/LocationPage")}>Choose Locations </button>
             <button onClick={() => navigate("/results")}>Results Page</button>
           </div>
         </div>
