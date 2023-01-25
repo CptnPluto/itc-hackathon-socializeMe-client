@@ -7,6 +7,7 @@ import ChooseEventPage from "./pages/ChooseEventPage/ChooseEventPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LocationPage from "./pages/LocationsPage/LocationPage";
 import ResultsPAge from "./pages/ResultsPage/ResultsPAge";
+import "./App.css";
 
 function App() {
   const [show, setShow] = useState(false);
