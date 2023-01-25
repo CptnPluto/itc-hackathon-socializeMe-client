@@ -7,6 +7,7 @@ import ChooseEventPage from "./pages/ChooseEventPage/ChooseEventPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LocationPage from "./pages/LocationsPage/LocationPage";
 import ResultsPAge from "./pages/ResultsPage/ResultsPAge";
+import "./App.css";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -29,11 +30,6 @@ function App() {
         <Route path="/chooseEvent" element={<ChooseEventPage />} />
         <Route path="/results" element={<ResultsPAge />} />
       </Routes>
-      <div>
-        <h1>Hackathon!</h1>
-        <button onClick={clickMe}>Click Me!</button>
-        {show && <h1>{message}</h1>}
-      </div>
     </BrowserRouter>
   );
 }

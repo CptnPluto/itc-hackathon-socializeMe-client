@@ -1,0 +1,14 @@
+.citycard{
+    border: 2px solid black;
+    position: relative;
+    margin-top: 8vh;
+    display: grid;
+    margin-left: 3vw;
+    width: 30vw;
+    height: 40vw;
+
+}
+
+.cityname-header{
+    margin-left: 8vw;
+}
