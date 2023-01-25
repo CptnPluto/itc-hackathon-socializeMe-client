@@ -13,7 +13,9 @@ export default function LandingPage() {
     //     console.log("testing");
     //     try {
     //         console.log("trying model");
-    //         const res = await axios.get("http://localhost:8080/model/1/NYC");
+    //         const res = await axios.get(
+    //             "http://localhost:8080/events/ds/1/NYC"
+    //         );
     //         console.log(res);
     //     } catch (err) {
     //         console.log(err);
