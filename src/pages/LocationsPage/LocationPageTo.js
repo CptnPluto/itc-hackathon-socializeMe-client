@@ -1,14 +1,14 @@
 import React from 'react'
 import CityCard from '../../components/CityCard/CityCard.js'
-import LocationForm from '../../components/LocationForm/LocationForm'
+import LocationFormTo from '../../components/LocationForm/LocationFormTo'
 import './LocationPage.css'
 import skyline from '../../images/skyline.png'
 
-function LocationPage() {
+function LocationPageTo() {
   return (
 <div>
 <div>
-  <LocationForm/>
+  <LocationFormTo/>
 </div>
 <div>
 <img className='skylineimg' src={skyline}></img>
@@ -18,4 +18,4 @@ function LocationPage() {
   )
 }
 
-export default LocationPage
+export default LocationPageTo
