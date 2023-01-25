@@ -24,7 +24,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/chooseLocation" element={<LocationPage />} />
+        <Route path="/LocationPage" element={<LocationPage />} />
         <Route path="/chooseCategory" element={<CategoryPage />} />
         <Route path="/chooseEvent" element={<ChooseEventPage />} />
         <Route path="/results" element={<ResultsPAge />} />
