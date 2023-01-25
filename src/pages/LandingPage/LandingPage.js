@@ -23,6 +23,15 @@ export default function LandingPage() {
         navigate("/login");
     };
 
+    //This isn't working: no cookies found. Need to fix.
+    const handleUserEvents = async () => {
+        console.log("user events");
+        const res = await axios.get("http://localhost:8080/users/usersEvents", {
+            withCredentials: true,
+        });
+        console.log("Users Events: ", res.data);
+    };
+
     return (
         <>
             <div className="container">
@@ -81,6 +90,13 @@ export default function LandingPage() {
                 </button>
                 <button type="button" classname="login" onClick={handleLogin}>
                     Login!
+                </button>
+                <button
+                    type="button"
+                    classname="userEvents"
+                    onClick={handleUserEvents}
+                >
+                    User Events!
                 </button>
             </div>
         </>
