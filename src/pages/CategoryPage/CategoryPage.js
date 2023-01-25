@@ -1,6 +1,8 @@
 import React from 'react'
 import './CategoryPage.css'
+import { useNavigate } from 'react-router-dom'
 function CategoryPage() {
+  const navigate = useNavigate()
 const handleFood =(e)=>{
   e.preventDefault()
   console.log("food")
@@ -20,6 +22,7 @@ const handleOutDoors=(e)=>{
 const handleNext=(e)=>{
   e.preventDefault()
   console.log("next");
+  navigate("/chooseEvent")
 }
   return (
     <div className="categoryPage">
