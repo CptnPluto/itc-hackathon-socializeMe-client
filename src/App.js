@@ -6,35 +6,38 @@ import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import ChooseEventPage from "./pages/ChooseEventPage/ChooseEventPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LocationPage from "./pages/LocationsPage/LocationPage";
+import LocationPageTo from "./pages/LocationsPage/LocationPageTo";
 import ResultsPAge from "./pages/ResultsPage/ResultsPAge";
 import "./App.css";
 import ResultsContextProvider from "./context/ResultsContext";
 
 function App() {
-  const [show, setShow] = useState(false);
-  const [message, setMessage] = useState("");
+    const [show, setShow] = useState(false);
+    const [message, setMessage] = useState("");
 
-  const clickMe = async () => {
-    const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/hello`);
-    setShow(!show);
-    setMessage(res.data);
-    console.log(res);
-  };
+    const clickMe = async () => {
+        const res = await axios.get(
+            `${process.env.REACT_APP_SERVER_URL}/hello`
+        );
+        setShow(!show);
+        setMessage(res.data);
+        console.log(res);
+    };
 
-  return (
-    <ResultsContextProvider>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/chooseLocation" element={<LocationPage />} />
-          <Route path="/chooseCategory" element={<CategoryPage />} />
-          <Route path="/chooseEvent" element={<ChooseEventPage />} />
-          <Route path="/results" element={<ResultsPAge />} />
-        </Routes>
-      </BrowserRouter>
-    </ResultsContextProvider>
-  );
+    return (
+        <ResultsContextProvider>
+            <BrowserRouter>
+                <NavBar />
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/chooseLocation" element={<LocationPage />} />
+                    <Route path="/chooseCategory" element={<CategoryPage />} />
+                    <Route path="/chooseEvent" element={<ChooseEventPage />} />
+                    <Route path="/results" element={<ResultsPAge />} />
+                </Routes>
+            </BrowserRouter>
+        </ResultsContextProvider>
+    );
 }
 
 export default App;
