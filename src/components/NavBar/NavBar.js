@@ -33,7 +33,7 @@ export default function NavBar() {
     <>
       <div className={`${isNavbarVisible ? "fadeIn" : "fadeOut"}`}>
         <div id="navBarContainer">
-          <div id="navBar" className="me-auto" defaultActiveKey="/">
+          <div id="navBar" className="me-auto" defaultactivekey="/">
             Navigation Dev
             <button onClick={() => navigate("/chooseCategory")}>Choose Category Page</button>
             <button onClick={() => navigate("/chooseEvent")}>Choose Event Page</button>

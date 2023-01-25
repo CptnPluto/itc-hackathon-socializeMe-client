@@ -1,0 +1,20 @@
+.locationdiv{
+    margin-top: 10vh;
+    display: flex;
+    justify-content:space-between;
+}
+
+.cityfromform{
+    height: 4vh;
+}
+
+.citytoform{
+    height: 4vh;
+}
+
+.locationbutton{
+    height: 4vh;
+}
+
+
+
