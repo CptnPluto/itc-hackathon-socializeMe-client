@@ -1,9 +1,14 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import ButtonCustom from '../Button/ButtonCustom';
 import './LocationForm.css'
 
 function LocationForm() {
     const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/chooseLocationTo")
+    }
 
   return (
 
@@ -25,9 +30,9 @@ function LocationForm() {
 </div>
 
 
-
-<button className='locationbutton'  onClick={() => {navigate("/chooseLocationTo")}}>Next</button>
-</div>
+<div className='buttondiv'>
+<ButtonCustom buttonText={'Next'}callback={handleClick}/>
+</div></div>
   )
 }
 

@@ -23,20 +23,6 @@ function App() {
   };
 
   return (
-<<<<<<< HEAD
-    <ResultsContextProvider>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/chooseLocation" element={<LocationPage />} />
-          <Route path="/chooseCategory" element={<CategoryPage />} />
-          <Route path="/chooseEvent" element={<ChooseEventPage />} />
-          <Route path="/results" element={<ResultsPAge />} />
-        </Routes>
-      </BrowserRouter>
-    </ResultsContextProvider>
-=======
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -48,7 +34,6 @@ function App() {
         <Route path="/results" element={<ResultsPAge />} />
       </Routes>
     </BrowserRouter>
->>>>>>> LocationPage
   );
 }
 
