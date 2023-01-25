@@ -11,6 +11,10 @@ import ResultsPAge from "./pages/ResultsPage/ResultsPage";
 import "./App.css";
 import ResultsContextProvider from "./context/ResultsContext";
 
+//For testing login and signup
+import Login from "./components/Login"
+import Signup from "./components/Signup"
+
 function App() {
     const [show, setShow] = useState(false);
     const [message, setMessage] = useState("");
@@ -34,6 +38,9 @@ function App() {
                     <Route path="/chooseCategory" element={<CategoryPage />} />
                     <Route path="/chooseEvent" element={<ChooseEventPage />} />
                     <Route path="/results" element={<ResultsPAge />} />
+                    {/* These two paths are for testing - we will probably change how we handle login and signup */}
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<Signup />} />
                 </Routes>
             </BrowserRouter>
         </ResultsContextProvider>

@@ -5,6 +5,8 @@ import "./ResultsPage.css";
 export default function ResultsPAge() {
     const [textDescription, setTextDescription] = useState("");
 
+    //Replace this with context state
+    const [city, setCity] = useState("");
 
     //NOTE: Needs the city value from wherever it is we're storing it. The context?
     const handleClick = async (e) => {
