@@ -12,44 +12,32 @@ import "./App.css";
 import ResultsContextProvider from "./context/ResultsContext";
 
 function App() {
-  const [show, setShow] = useState(false);
-  const [message, setMessage] = useState("");
+    const [show, setShow] = useState(false);
+    const [message, setMessage] = useState("");
 
-  const clickMe = async () => {
-    const res = await axios.get(`${process.env.REACT_APP_SERVER_URL}/hello`);
-    setShow(!show);
-    setMessage(res.data);
-    console.log(res);
-  };
+    const clickMe = async () => {
+        const res = await axios.get(
+            `${process.env.REACT_APP_SERVER_URL}/hello`
+        );
+        setShow(!show);
+        setMessage(res.data);
+        console.log(res);
+    };
 
-  return (
-<<<<<<< HEAD
-    <ResultsContextProvider>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/chooseLocation" element={<LocationPage />} />
-          <Route path="/chooseCategory" element={<CategoryPage />} />
-          <Route path="/chooseEvent" element={<ChooseEventPage />} />
-          <Route path="/results" element={<ResultsPAge />} />
-        </Routes>
-      </BrowserRouter>
-    </ResultsContextProvider>
-=======
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/chooseLocation" element={<LocationPage />} />
-        <Route path="/chooseLocationTo" element={<LocationPageTo />} />
-        <Route path="/chooseCategory" element={<CategoryPage />} />
-        <Route path="/chooseEvent" element={<ChooseEventPage />} />
-        <Route path="/results" element={<ResultsPAge />} />
-      </Routes>
-    </BrowserRouter>
->>>>>>> LocationPage
-  );
+    return (
+        <ResultsContextProvider>
+            <BrowserRouter>
+                <NavBar />
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/chooseLocation" element={<LocationPage />} />
+                    <Route path="/chooseCategory" element={<CategoryPage />} />
+                    <Route path="/chooseEvent" element={<ChooseEventPage />} />
+                    <Route path="/results" element={<ResultsPAge />} />
+                </Routes>
+            </BrowserRouter>
+        </ResultsContextProvider>
+    );
 }
 
 export default App;
