@@ -1,0 +1,22 @@
+#buttonContainerCustom{
+    position: absolute;
+    height: 50px;
+    /* bottom: 25px; */
+    width: 85%;
+    display: flex;
+    margin-left: 13vw;
+
+}
+
+#buttonCustom{
+    /* margin: 0 auto; */
+    width: 84%;
+    border-radius: 8px;
+    font-weight: 800;
+    color: white;
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background: linear-gradient(217deg, #866ff3, rgba(255,0,0,0) 70.71%),
+                linear-gradient(336deg, #df3f3f, rgba(0,0,255,0) 70.71%),
+                linear-gradient(127deg, #ba57b2, rgba(0,255,0,0) 70.71%);
+    border: none;
+}
