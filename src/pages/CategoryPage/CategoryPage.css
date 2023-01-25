@@ -3,14 +3,16 @@
     justify-content: center;
     margin: auto;
   flex-direction: column;
+  padding:50px
 }
 .categoryPageButtons{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     justify-content: center;
     padding:30px;
-    gap:20px
+    gap:20px;
 }
 .btn{
     padding: 10px;
+    font-family:Comic Sans MS, Comic Sans, cursive
 }
