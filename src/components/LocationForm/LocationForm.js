@@ -1,29 +1,32 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
+import './LocationForm.css'
 
 function LocationForm() {
+    const navigate = useNavigate();
+
   return (
-    <div className='locationdiv'>
+
+<div>
+
+<div className='fromheader'>
+<h3 htmlFor="Location-From">Choose the city you are coming from:</h3>
+</div>
+<div className='locationdiv'>
 
 
-<label htmlFor="Location-From">City From:</label>
-<select className='cityfromform' name="citiesfrom" id="citiesfrom" form="citiesfrom">
+<select className='cityfromform' name="citiesfrom" id="citiesfrom" form="citiesfrom" >
+  <option value="">Coming From...</option>
   <option value="LosAngeles">Los Angeles</option>
   <option value="Sacramento">Sacramento</option>
   <option value="NewYork">New York</option>
   <option value="Miami">Miami</option>
 </select>
+</div>
 
 
 
-<label htmlFor="Location-To">City To:</label>
-<select className='citytoform' name="citiesto" id="citiesto" form="citiesto">
-  <option value="TelAviv">Tel Aviv</option>
-  <option value="RishonLetziyon">Rishon Letziyon</option>
-  <option value="Hertsiliya">Hertsiliya</option>
-  <option value="BatYam">BatYam</option>
-</select>
-
-<button className='locationbutton'>Next</button>
+<button className='locationbutton'  onClick={() => {navigate("/chooseLocationTo")}}>Next</button>
 </div>
   )
 }
