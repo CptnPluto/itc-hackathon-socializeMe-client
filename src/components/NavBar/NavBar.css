@@ -1,0 +1,57 @@
+#navBarContainer {
+    height: 9vh;
+    box-shadow: 5px 5px 5px rgb(151, 151, 151);
+    width: 100% !important;
+    max-width: 100% !important;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+    background-color: #7A98FF;
+    display: flex;
+    align-items: center;
+    /* animation: fadeOut 1.3s ease-in-out; */
+  
+}
+
+.fadeIn {
+    animation: fadeIn 0.3s ease-in;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      visibility: hidden;
+      opacity: 0;
+    }
+    to {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+  /* Fade Out Animation */
+  .fadeOut {
+    animation: fadeOut 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      visibility: visible;
+      opacity: 1;
+    }
+    to {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+  }
+  
+  
+  @media only screen and (max-width: 1000px) {}
+
+  
