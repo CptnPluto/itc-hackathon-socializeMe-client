@@ -6,6 +6,7 @@ import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import ChooseEventPage from "./pages/ChooseEventPage/ChooseEventPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LocationPage from "./pages/LocationsPage/LocationPage";
+import LocationPageTo from "./pages/LocationsPage/LocationPageTo";
 import ResultsPAge from "./pages/ResultsPage/ResultsPAge";
 import "./App.css";
 
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/chooseLocation" element={<LocationPage />} />
+        <Route path="/chooseLocationTo" element={<LocationPageTo />} />
         <Route path="/chooseCategory" element={<CategoryPage />} />
         <Route path="/chooseEvent" element={<ChooseEventPage />} />
         <Route path="/results" element={<ResultsPAge />} />
