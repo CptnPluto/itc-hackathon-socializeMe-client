@@ -1,0 +1,17 @@
+.aboutText {
+  display: flex;
+  margin-top: 150px;
+  border: 1px solid red;
+}
+
+.startButton {
+  display: flex;
+  border: 1px solid red;
+  justify-content: flex-end;
+  margin: 230px 30px 0px 0px;
+}
+
+Body {
+  background-image: url("gettyimages-1395722285.jpg");
+  background-color: #cccccc;
+}

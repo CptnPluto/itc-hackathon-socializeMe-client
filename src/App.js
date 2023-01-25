@@ -29,11 +29,6 @@ function App() {
         <Route path="/chooseEvent" element={<ChooseEventPage />} />
         <Route path="/results" element={<ResultsPAge />} />
       </Routes>
-      <div>
-        <h1>Hackathon!</h1>
-        <button onClick={clickMe}>Click Me!</button>
-        {show && <h1>{message}</h1>}
-      </div>
     </BrowserRouter>
   );
 }
