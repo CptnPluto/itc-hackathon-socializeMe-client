@@ -3,11 +3,14 @@ import { useNavigate } from "react-router-dom";
 import ButtonCustom from "../Button/ButtonCustom";
 import "./LocationForm.css";
 
-function LocationForm() {
+function LocationForm({ setLoadIn }) {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/chooseCategory");
+        setLoadIn(false);
+        setTimeout(() => {
+            navigate("/chooseCategory");
+        }, 500);
     };
 
     return (

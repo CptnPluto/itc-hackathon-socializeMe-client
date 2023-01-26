@@ -20,3 +20,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* Make the .page_container class fade out when unmounted, and fade in when mounted */
+.page_container {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.load_in {
+    opacity: 1;
+}
+
+.load_out {
+    opacity: 0;
+}
