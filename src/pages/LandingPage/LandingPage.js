@@ -44,12 +44,14 @@ export default function LandingPage() {
     }, []);
 
     return (
-        <div
-            className={
-                loadIn ? "page_container load_in" : "page_container load_out"
-            }
-        >
-            <div className="container">
+        <>
+            <div
+                className={
+                    loadIn
+                        ? "container page_container load_in"
+                        : "container page_container load_out"
+                }
+            >
                 <div className="bgImg">
                     <img
                         className="imgCover"
@@ -121,6 +123,6 @@ export default function LandingPage() {
                     User Events!
                 </button>
             </div>
-        </div>
+        </>
     );
 }
