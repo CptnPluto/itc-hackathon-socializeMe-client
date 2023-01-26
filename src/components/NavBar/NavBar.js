@@ -36,6 +36,7 @@ export default function NavBar() {
         <div id="navBarContainer">
           <img id="logoImg" onClick={() => navigate("/")} src={Logo} alt="Logo"></img>
           <div id="navBar" className="me-auto" defaultActiveKey="/"></div>
+
           <div id="humburgerMenu">
             <section className="p-menu1">
               <nav id="navbar" className="navigation" role="navigation">

@@ -7,10 +7,13 @@ import ChooseEventPage from "./pages/ChooseEventPage/ChooseEventPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LocationPage from "./pages/LocationsPage/LocationPage";
 import LocationPageTo from "./pages/LocationsPage/LocationPageTo";
-import ResultsPAge from "./pages/ResultsPage/ResultsPAge";
+import ResultsPage from "./pages/ResultsPage/ResultsPage";
 import "./App.css";
 import ResultsContextProvider from "./context/ResultsContext";
-import ResultsList from "./components/ResultsList/ResultsList";
+
+//For testing login and signup
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -30,9 +33,13 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/chooseLocation" element={<LocationPage />} />
+          <Route path="/chooseLocationTo" element={<LocationPageTo />} />
           <Route path="/chooseCategory" element={<CategoryPage />} />
           <Route path="/chooseEvent" element={<ChooseEventPage />} />
-          <Route path="/results" element={<ResultsList />} />
+          <Route path="/results" element={<ResultsPage />} />
+          {/* These two paths are for testing - we will probably change how we handle login and signup */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </ResultsContextProvider>

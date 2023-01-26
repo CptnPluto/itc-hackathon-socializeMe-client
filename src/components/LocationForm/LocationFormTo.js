@@ -1,15 +1,24 @@
 import React from 'react'
+import ButtonCustom from '../Button/ButtonCustom';
 import { useNavigate } from "react-router-dom";
+import './LocationForm.css'
+
+
+
 
 function LocationFormTo() {
     const navigate = useNavigate();
+
+    const handleClick = () => {
+      navigate("/chooseCategory")
+    }
 
   return (
 
 <div>
 
 <div className='fromheader'>
-<h3 htmlFor="Location-From">Choose the city you are travelling to:</h3>
+<h3 className='locationtoheader' htmlFor="Location-From">Choose the city you are travelling to:</h3>
 </div>
 
 <div className='locationtodiv'>
@@ -22,9 +31,10 @@ function LocationFormTo() {
 </select>
 </div>
 
+<div className='buttondiv'>
+<ButtonCustom buttonText={'Next'}callback={handleClick}/>
+</div>
 
-
-<button className='locationbutton'  onClick={() => {navigate("/chooseCategory")}}>Next</button>
 </div>
   )
 }

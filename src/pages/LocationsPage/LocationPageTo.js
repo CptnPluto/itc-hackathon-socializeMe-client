@@ -14,6 +14,17 @@ function LocationPageTo() {
       </div>
     </div>
   );
+ 
+      <div>
+      <div>
+        <LocationFormTo/>
+      <img className='skylineimg' src={skyline}></img>
+      </div>
+      </div>
+      
+        )
+
+  
 }
 
 export default LocationPageTo;
