@@ -7,7 +7,7 @@ import ChooseEventPage from "./pages/ChooseEventPage/ChooseEventPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LocationPage from "./pages/LocationsPage/LocationPage";
 import LocationPageTo from "./pages/LocationsPage/LocationPageTo";
-import ResultsPage from "./pages/ResultsPage/ResultsPage";
+import ResultsList from "./pages/ResultsPage/ResultsPage";
 import "./App.css";
 import ResultsContextProvider from "./context/ResultsContext";
 
@@ -36,7 +36,7 @@ function App() {
           <Route path="/chooseLocationTo" element={<LocationPageTo />} />
           <Route path="/chooseCategory" element={<CategoryPage />} />
           <Route path="/chooseEvent" element={<ChooseEventPage />} />
-          <Route path="/results" element={<ResultsPage />} />
+          <Route path="/results" element={<ResultsList />} />
           {/* These two paths are for testing - we will probably change how we handle login and signup */}
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
