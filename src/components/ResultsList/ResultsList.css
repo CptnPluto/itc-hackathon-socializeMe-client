@@ -5,7 +5,7 @@
 }
 
 /* make box shadow and cursor on hover over #card-container */
-#card-container:hover {
+/* #card-container:hover {
     box-shadow: 0 0 10px #ccc;
     cursor: pointer;
-}
+} */
