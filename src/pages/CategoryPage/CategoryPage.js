@@ -18,11 +18,6 @@ import { useNavigate } from "react-router-dom";
 import "../../App.css";
 
 function CategoryPage() {
-<<<<<<< HEAD
-    const navigate = useNavigate();
-    const [isClicked, setIsClicked] = useState(false);
-    const [loadIn, setLoadIn] = useState(false);
-=======
   const navigate = useNavigate();
   const [isClicked, setIsClicked] = useState(false);
 
@@ -30,7 +25,6 @@ function CategoryPage() {
   const [music, setMusic] = useState(false);
   const [attractions, setAttractions] = useState(false);
   const [outDoors, setOutDoors] = useState(false);
->>>>>>> finalizeCategories
 
   const handleFood = (e) => {
     e.preventDefault();
