@@ -1,31 +1,30 @@
 .locationdiv{
     margin-top: 10vh;
     display: flex;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
-    margin-left: 5vw;
+    margin-left: 9vw;
 }
 
 .locationtodiv{
-    margin-top: 10vh;
     display: flex;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
-    margin-left: 27vw;
+    margin-left: 9vw;
 }
 
 .cityfromform{
-    height: 4vh;
-    width: 30vw;
-    margin-left: 27vw;
+    height: 7vh;
+    width: 43vw;
+    margin-left: 17vw;
 
 
 }
 
 .citytoform{
-    height: 4vh;
-    width: 30vw;
-    margin-left: 5vw;
+    height: 7vh;
+    width: 43vw;
+    margin-left: 17vw;
 }
 
 .locationbutton{
@@ -34,9 +33,13 @@
 
 .skylineimg{
     width: 100%;
-    height: 100%;
-    margin-top: 27vh;
+    height: 57%;
+    margin-top: 31vh;
+    position: absolute;
+    bottom: 0%;
 }
+
+
 
 
 

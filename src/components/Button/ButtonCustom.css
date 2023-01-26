@@ -19,4 +19,6 @@
                 linear-gradient(336deg, #df3f3f, rgba(0,0,255,0) 70.71%),
                 linear-gradient(127deg, #ba57b2, rgba(0,255,0,0) 70.71%);
     border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+
 }

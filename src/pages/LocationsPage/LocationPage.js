@@ -5,28 +5,17 @@ import "./LocationPage.css";
 import skyline from "../../images/skyline.png";
 
 function LocationPage() {
-    const [loadIn, setLoadIn] = useState(false);
+  return (
+<div>
+<div>
+  <LocationForm/>
+</div>
+<div>
+<img className='skylineimg' src={skyline}></img>
+</div>
+</div>
 
-    useEffect(() => {
-        setTimeout(() => {
-            setLoadIn(true);
-        });
-    }, []);
-
-    return (
-        <div
-            className={
-                loadIn ? "page_container load_in" : "page_container load_out"
-            }
-        >
-            <div>
-                <LocationForm setLoadIn={setLoadIn} />
-            </div>
-            <div>
-                <img className="skylineimg" src={skyline}></img>
-            </div>
-        </div>
-    );
+  )
 }
 
 export default LocationPage;

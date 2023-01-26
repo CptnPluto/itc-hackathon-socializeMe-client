@@ -35,6 +35,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
                     <Route path="/chooseLocation" element={<LocationPage />} />
+                    <Route path="/chooseLocationTo" element={<LocationPageTo />} />
                     <Route path="/chooseCategory" element={<CategoryPage />} />
                     <Route path="/chooseEvent" element={<ChooseEventPage />} />
                     <Route path="/results" element={<ResultsPage />} />
