@@ -13,11 +13,21 @@ import "../../App.css";
 
 export default function LandingPage() {
   let navigate = useNavigate();
+  const [loadIn, setLoadIn] = useState(false);
+
   const handleNavigate = () => {
     setLoadIn(false);
     setTimeout(() => {
       navigate("/chooseLocation");
     }, 500);
+  };
+  const handleSignup = () => {
+    console.log("sign up");
+    navigate("/signup");
+  };
+  const handleLogin = () => {
+    console.log("login");
+    navigate("/login");
   };
 
   //This isn't working: no cookies found. Need to fix.
