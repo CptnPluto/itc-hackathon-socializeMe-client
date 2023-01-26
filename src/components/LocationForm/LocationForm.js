@@ -7,7 +7,7 @@ function LocationForm() {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/chooseEvent");
+        navigate("/chooseCategory");
     };
 
     return (
