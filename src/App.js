@@ -9,6 +9,7 @@ import LocationPage from "./pages/LocationsPage/LocationPage";
 import LocationPageTo from "./pages/LocationsPage/LocationPageTo";
 import ResultsPage from "./pages/ResultsPage/ResultsPage";
 import ResultsList from "./components/ResultsList/ResultsList";
+import RecResultsPage from "./pages/RecResultsPage/RecResultsPage";
 import "./App.css";
 import ResultsContextProvider from "./context/ResultsContext";
 
@@ -43,6 +44,7 @@ function App() {
                     <Route path="/chooseCategory" element={<CategoryPage />} />
                     <Route path="/chooseEvent" element={<ChooseEventPage />} />
                     <Route path="/results" element={<ResultsList />} />
+                    <Route path="/recResults" element={<RecResultsPage />} />
                     {/* These two paths are for testing - we will probably change how we handle login and signup */}
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />

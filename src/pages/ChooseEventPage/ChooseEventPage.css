@@ -1,4 +1,4 @@
-#topButton{
+#topButton {
     position: absolute;
     left: 13px;
     top: 74px;
@@ -6,16 +6,10 @@
     display: flex;
 }
 
-#bottomButton{
-    position: absolute;
+#bottomButton {
+    position: fixed;
     height: 36px;
     bottom: 25px;
     width: 100%;
     display: flex;
-}
-
-#listContainer{
-    height: 85vh;
-    overflow: auto;
-    border-radius: 15px;
 }

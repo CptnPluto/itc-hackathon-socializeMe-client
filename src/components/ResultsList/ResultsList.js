@@ -3,14 +3,15 @@ import { ResultsContext } from "../../context/ResultsContext";
 import ResultsCard from "../ResultCard/ResultsCard";
 import "./ResultsList.css";
 
-export default function ResultsList() {
-  const { resultsList } = useContext(ResultsContext);
-  console.log(resultsList);
-  return (
-    <div id="card-container">
-      {resultsList?.map((result) => (
-        <ResultsCard key={result.eventId} {...result} />
-      ))}
-    </div>
-  );
+export default function ResultsList({ list }) {
+    // const { eventId } = useContext(ResultsContext);
+    // console.log("Event Id on load: ",eventId);
+
+    return (
+        <div id="card-container">
+            {list?.map((result) => (
+                <ResultsCard key={result.eventId} {...result} />
+            ))}
+        </div>
+    );
 }
