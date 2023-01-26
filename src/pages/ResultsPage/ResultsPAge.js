@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ResultsPage.css";
 
-export default function ResultsPAge() {
+export default function ResultsPage() {
     const [textDescription, setTextDescription] = useState("");
     const [loadIn, setLoadIn] = useState(false);
 
@@ -30,7 +30,7 @@ export default function ResultsPAge() {
                 loadIn ? "page_container load_in" : "page_container load_out"
             }
         >
-            <div>ResultsPAge</div>
+            <div>ResultsPage</div>
 
             {/* This container will submit a text description to the DS api, isntead of the event id that we are doing previously. */}
             <div className="text-description-container">
