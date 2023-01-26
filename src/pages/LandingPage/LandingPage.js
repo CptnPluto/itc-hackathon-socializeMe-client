@@ -1,5 +1,5 @@
 import axios from "axios";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 import skyline from "../../images/skyline.avif";
@@ -7,10 +7,18 @@ import location from "../../images/location.svg";
 import activities from "../../images/activities.svg";
 import newEx from "../../images/newEx.svg";
 
+import "../../App.css";
+
 export default function LandingPage() {
+    const [transition, setTransition] = useState(false);
+    const [loadIn, setLoadIn] = useState(false);
     let navigate = useNavigate();
+
     const handleNavigate = () => {
-        navigate("/chooseLocation");
+        setLoadIn(false);
+        setTimeout(() => {
+            navigate("/chooseLocation");
+        }, 500);
     };
 
     const handleSignup = () => {
@@ -32,8 +40,16 @@ export default function LandingPage() {
         console.log("Users Events: ", res.data);
     };
 
+    useEffect(() => {
+        setLoadIn(true);
+    }, []);
+
     return (
-        <>
+        <div
+            className={
+                loadIn ? "page_container load_in" : "page_container load_out"
+            }
+        >
             <div className="container">
                 <div className="bgImg">
                     <img
@@ -99,6 +115,6 @@ export default function LandingPage() {
                     User Events!
                 </button>
             </div>
-        </>
+        </div>
     );
 }

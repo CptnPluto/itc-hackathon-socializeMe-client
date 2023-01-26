@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ResultsPage.css";
 
 export default function ResultsPAge() {
     const [textDescription, setTextDescription] = useState("");
+    const [loadIn, setLoadIn] = useState(false);
 
     //Replace this with context state
     const [city, setCity] = useState("");
@@ -19,8 +20,16 @@ export default function ResultsPAge() {
         console.log("res: ", res);
     };
 
+    useEffect(() => {
+        setLoadIn(true);
+    }, []);
+
     return (
-        <>
+        <div
+            className={
+                loadIn ? "page_container load_in" : "page_container load_out"
+            }
+        >
             <div>ResultsPAge</div>
 
             {/* This container will submit a text description to the DS api, isntead of the event id that we are doing previously. */}
@@ -41,6 +50,6 @@ export default function ResultsPAge() {
                     See what you get!
                 </button>
             </div>
-        </>
+        </div>
     );
 }
