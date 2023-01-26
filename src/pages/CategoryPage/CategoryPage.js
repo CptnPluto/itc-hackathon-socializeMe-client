@@ -112,20 +112,16 @@ function CategoryPage() {
               <div className="buttonText"> Attractions</div>
             </div>
           </button>
-          <button onClick={handleOutDoors} className={outDoors ? "btnAlive" : "btn"}>
+          <button onClick={handleOutDoors} className={outDoors ? "btnAlive" : "btn"}/>
             <div className="buttonContent">
               <img id="catButton" src={outDoors ? outDoorsSvg : outDoorsSvgBW}></img>
               <div className="buttonText"> Outdoors</div>
             </div>
         </div>
-<<<<<<< HEAD
-    );
-=======
         <ButtonCustom buttonText={"Next"} type="submit" />
       </form>
     </div>
   );
->>>>>>> finalizeCategories
 }
 
 export default CategoryPage;
