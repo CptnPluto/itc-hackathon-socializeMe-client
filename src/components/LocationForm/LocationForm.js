@@ -16,7 +16,7 @@ function LocationForm({ setLoadIn }) {
     return (
         <div>
             <div className="fromheader">
-                <h3 htmlFor="Location-From">
+                <h3 className='comingfromheader'htmlFor="Location-From">
                     Choose the city you are coming from:
                 </h3>
             </div>
