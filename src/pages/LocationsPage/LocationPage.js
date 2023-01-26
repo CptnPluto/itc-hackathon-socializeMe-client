@@ -9,8 +9,6 @@ function LocationPage() {
 <div>
 <div>
   <LocationForm/>
-</div>
-<div>
 <img className='skylineimg' src={skyline}></img>
 </div>
 </div>

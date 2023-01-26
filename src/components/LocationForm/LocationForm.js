@@ -15,7 +15,7 @@ function LocationForm() {
 <div>
 
 <div className='fromheader'>
-<h3 htmlFor="Location-From">Choose the city you are coming from:</h3>
+<h3 className='locationfromheader' htmlFor="Location-From">Choose the city you are coming from:</h3>
 </div>
 <div className='locationdiv'>
 

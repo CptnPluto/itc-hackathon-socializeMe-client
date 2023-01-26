@@ -118,6 +118,8 @@
       grid-template-rows: repeat(3, 1fr);
       justify-items: center;
       z-index: 120;
+      background-color: white;
+
     }
     
     .hamburger1 div {
@@ -187,6 +189,7 @@
         height: 8vh;
         left: 46px;
         margin: 0px 0 0 -7.5vh;
+        background-color: white;
     }
   
     #searchLink {

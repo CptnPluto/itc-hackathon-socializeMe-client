@@ -18,7 +18,7 @@ function LocationFormTo() {
 <div>
 
 <div className='fromheader'>
-<h3 htmlFor="Location-From">Choose the city you are travelling to:</h3>
+<h3 className='locationtoheader' htmlFor="Location-From">Choose the city you are travelling to:</h3>
 </div>
 
 <div className='locationtodiv'>
