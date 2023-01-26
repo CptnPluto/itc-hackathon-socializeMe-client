@@ -21,12 +21,12 @@ function LocationPage() {
                 loadIn ? "page_container load_in" : "page_container load_out"
             }
         >
-            <div>
+            
                 <LocationForm setLoadIn={setLoadIn} />
-            </div>
-            <div>
                 <img className="skylineimg" src={skyline}></img>
-            </div>
+            
+            
+            
         </div>
     );
 }
