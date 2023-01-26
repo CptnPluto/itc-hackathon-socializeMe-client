@@ -7,16 +7,30 @@ export default function ResultsContextProvider({ children }) {
   const [originCity, setOriginCity] = useState();
   const [category, setCategory] = useState();
   const [destinationCity, setDestinationCity] = useState();
-  const [resultsList, useResultsList] = useState();
+  const [resultsList, setResultsList] = useState();
 
   const getResultsByCity = async (city) => {
     try {
-      const res = await axios.get(`https://itc-hackathon-socialize-me-server.vercel.app/events/cityEvents/TLV/Music`);
+      const res = await axios.get(`https://itc-hackathon-socialize-me-server.vercel.app/events/ds/1/NYC`);
       console.log(res.data, "test");
+      setResultsList(res.data);
     } catch (error) {
       console.log(error);
     }
   };
+
+  // const doTest = async () => {
+  //     console.log("testing");
+  //     try {
+  //         console.log("trying model");
+  //         const res = await axios.get(
+  //             "http://localhost:8080/events/ds/1/NYC"
+  //         );
+  //         console.log(res);
+  //     } catch (err) {
+  //         console.log(err);
+  //     }
+  // };
 
   //   const getResultsByEventId = async (city, eventId) => {
   //     try {
@@ -32,7 +46,9 @@ export default function ResultsContextProvider({ children }) {
   }, []);
 
   return (
-    <ResultsContext.Provider value={{ originCity, setOriginCity, category, setCategory, destinationCity, setDestinationCity }}>
+    <ResultsContext.Provider
+      value={{ resultsList, originCity, setOriginCity, category, setCategory, destinationCity, setDestinationCity }}
+    >
       {children}
     </ResultsContext.Provider>
   );
