@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, { useEffect, useState } from "react";
-=======
 import React, { useState } from "react";
->>>>>>> finalizeCategories
 import "./CategoryPage.css";
 import foodSvg from "../../SVG/categories/food-c.svg";
 import foodSvgBW from "../../SVG/categories/food-b&w.svg";
@@ -106,11 +102,11 @@ function CategoryPage() {
               <div className="buttonText"> Attractions</div>
             </div>
           </button>
-          <button onClick={handleOutDoors} className={outDoors ? "btnAlive" : "btn"}/>
-            <div className="buttonContent">
-              <img id="catButton" src={outDoors ? outDoorsSvg : outDoorsSvgBW}></img>
-              <div className="buttonText"> Outdoors</div>
-            </div>
+          <button onClick={handleOutDoors} className={outDoors ? "btnAlive" : "btn"} />
+          <div className="buttonContent">
+            <img id="catButton" src={outDoors ? outDoorsSvg : outDoorsSvgBW}></img>
+            <div className="buttonText"> Outdoors</div>
+          </div>
         </div>
         <ButtonCustom buttonText={"Next"} type="submit" />
       </form>
