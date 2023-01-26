@@ -1,17 +1,15 @@
 #categories {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
-  margin: 10px;
-  border-radius: 30px;
-  padding: 5px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgb(226, 223, 223);
 }
 
 #eventInfo-main {
   display: flex;
   justify-content: space-around;
   flex-basis: content;
-  padding-top: 2%;
 }
 
 #eventInfo-main p {
@@ -29,11 +27,23 @@
 }
 
 #cardLink button {
-  background-color: rgb(59, 194, 149);
+  background: linear-gradient(217deg, #866ff3, rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(336deg, #df3f3f, rgba(0, 0, 255, 0) 70.71%),
+    linear-gradient(127deg, #ba57b2, rgba(0, 255, 0, 0) 70.71%);
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 #cardLink a {
   text-decoration: none;
+  color: white;
+}
+
+#middle-card {
+  display: flex;
+  align-items: center;
+}
+
+#music-logo {
+  height: 10%;
 }
