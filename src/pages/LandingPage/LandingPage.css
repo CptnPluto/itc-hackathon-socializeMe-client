@@ -10,7 +10,9 @@
   position: relative;
   width: 100%;
   margin-top: 6vh;
+  padding: 0;
 }
+
 .imgCover {
   position: absolute;
   width: 100%;
