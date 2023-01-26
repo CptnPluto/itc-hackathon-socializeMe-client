@@ -13,3 +13,9 @@
     width: 100%;
     display: flex;
 }
+
+#listContainer{
+    height: 85vh;
+    overflow: auto;
+    border-radius: 15px;
+}

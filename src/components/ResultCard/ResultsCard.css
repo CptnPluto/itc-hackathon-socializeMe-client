@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 3px 3px 3px rgb(226, 223, 223);
+  /* box-shadow: 3px 3px 3px rgb(226, 223, 223); */
 }
 
 #eventInfo-main {
@@ -42,8 +42,19 @@
 #middle-card {
   display: flex;
   align-items: center;
+  height: 14vh;
+  background-color: white;
+  margin: 8px;
+  border-radius: 8px;
+  /* box-shadow: 2px 2px 2px rgb(98 98 98 / 46%); */
+  filter: drop-shadow(2px 2px 2px rgba(39, 39, 39, 0.44));
+  padding: 8px;
 }
 
 #music-logo {
-  height: 10%;
+  scale: 0.6;
+}
+
+#imageAndGenre{
+height: 100px;
 }

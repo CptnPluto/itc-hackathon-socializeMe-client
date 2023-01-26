@@ -4,6 +4,7 @@ import ResultsList from "../../components/ResultsList/ResultsList";
 import "./ChooseEventPage.css";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import GoBackButton from "../../components/Button/GoBackButton";
 
 export default function ChooseEventPage() {
   const [loadIn, setLoadIn] = useState(false);
@@ -31,15 +32,16 @@ export default function ChooseEventPage() {
   }, []);
 
   return (
-    <div
-      className={loadIn ? "page_container load_in" : "page_container load_out"}
-    >
-      <div id="topButton">
-        <Button buttonText={"prev"} callback={goBack} width={`${16}%`} />
+    <>
+      <div id="pageContainer">
+        <div id="listContainer">
+          <ResultsList />
+        </div>
+        <div id="bottomButton">
+          <Button buttonText={"NEXT"} callback={buttonHandel} width={`${84}%`} />
+        </div>
       </div>
-      <div id="bottomButton">
-        <Button buttonText={"NEXT"} callback={buttonHandel} width={`${84}%`} />
-      </div>
-    </div>
+      <GoBackButton />
+    </>
   );
 }
