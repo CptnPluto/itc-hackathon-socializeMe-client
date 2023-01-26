@@ -12,6 +12,7 @@ import ButtonCustom from "../../components/Button/ButtonCustom";
 import { useNavigate } from "react-router-dom";
 
 import "../../App.css";
+import GoBackButton from "../../components/Button/GoBackButton";
 
 function CategoryPage() {
   const navigate = useNavigate();
@@ -81,37 +82,40 @@ function CategoryPage() {
     navigate("/chooseEvent");
   };
   return (
-    <div className="categoryPage">
-      <form onSubmit={handleNext}>
-        <div className="categoryPageButtons">
-          <button onClick={handleFood} className={food ? "btnAlive" : "btn"}>
-            <div className="buttonContent">
-              <img id="catButton" src={food ? foodSvg : foodSvgBW}></img>
-              <div className="buttonText"> Food</div>
-            </div>
-          </button>
-          <button onClick={handleMusic} className={music ? "btnAlive" : "btn"}>
-            <div className="buttonContent">
-              <img id="catButton" src={music ? musicSvg : musicSvgBW}></img>
-              <div className="buttonText"> Music</div>
-            </div>
-          </button>
-          <button onClick={handleMuseums} className={attractions ? "btnAlive" : "btn"}>
-            <div className="buttonContent">
-              <img id="catButton" src={attractions ? attractionsSvg : attractionsSvgBW}></img>
-              <div className="buttonText"> Attractions</div>
-            </div>
-          </button>
-          <button onClick={handleOutDoors} className={outDoors ? "btnAlive" : "btn"}>
-            <div className="buttonContent">
-              <img id="catButton" src={outDoors ? outDoorsSvg : outDoorsSvgBW}></img>
-              <div className="buttonText"> Outdoors</div>
-            </div>
-          </button>
-        </div>
-        <ButtonCustom buttonText={"Next"} type="submit" />
-      </form>
-    </div>
+    <>
+      <div className="categoryPage">
+        <form onSubmit={handleNext}>
+          <div className="categoryPageButtons">
+            <button onClick={handleFood} className={food ? "btnAlive" : "btn"}>
+              <div className="buttonContent">
+                <img id="catButton" src={food ? foodSvg : foodSvgBW}></img>
+                <div className="buttonText"> Food</div>
+              </div>
+            </button>
+            <button onClick={handleMusic} className={music ? "btnAlive" : "btn"}>
+              <div className="buttonContent">
+                <img id="catButton" src={music ? musicSvg : musicSvgBW}></img>
+                <div className="buttonText"> Music</div>
+              </div>
+            </button>
+            <button onClick={handleMuseums} className={attractions ? "btnAlive" : "btn"}>
+              <div className="buttonContent">
+                <img id="catButton" src={attractions ? attractionsSvg : attractionsSvgBW}></img>
+                <div className="buttonText"> Attractions</div>
+              </div>
+            </button>
+            <button onClick={handleOutDoors} className={outDoors ? "btnAlive" : "btn"}>
+              <div className="buttonContent">
+                <img id="catButton" src={outDoors ? outDoorsSvg : outDoorsSvgBW}></img>
+                <div className="buttonText"> Outdoors</div>
+              </div>
+            </button>
+          </div>
+          <ButtonCustom buttonText={"Next"} type="submit" />
+        </form>
+      </div>
+      <GoBackButton />
+    </>
   );
 }
 

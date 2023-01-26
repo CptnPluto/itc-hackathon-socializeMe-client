@@ -1,0 +1,15 @@
+#prevBtn{
+    position: absolute;
+    height: 39px;
+    bottom: 11px;
+    padding: 0 10px;
+    border-radius: 8px;
+    font-weight: 800;
+    color: white;
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background: linear-gradient(217deg, #866ff3, rgba(255,0,0,0) 70.71%), linear-gradient(336deg, #df3f3f, rgba(0,0,255,0) 70.71%), linear-gradient(127deg, #ba57b2, rgba(0,255,0,0) 70.71%);
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 30%);
+    left: 11px;
+    border: black solid 1px;
+}
