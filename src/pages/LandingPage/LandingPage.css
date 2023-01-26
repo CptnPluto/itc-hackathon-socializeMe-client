@@ -15,6 +15,7 @@
   position: absolute;
   width: 100%;
   height: auto;
+  filter: drop-shadow(1px 2px 3px rgba(146, 163, 195, 0.796));
 }
 .aboutText {
   display: flex;
@@ -37,16 +38,26 @@
   display: inline-block;
 }
 .welcome {
-  margin-top: 23vh;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 4px 20px;
+  width: 76%;
+  margin: 24vh auto 2vh;
+  filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.334));
+  color: rgb(80, 80, 80);
 }
 .svg {
-  margin-top: 8vh;
-  margin-left: 5vh;
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 25px 25px 2px 25px;
+  width: 76%;
+  margin: 4vh auto;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.334));
+  color: rgb(80, 80, 80);
 }
 .location {
   width: 28px;
@@ -76,4 +87,8 @@
   display: flex;
 
   flex-direction: row;
+}
+.typewriter-effect {
+  color: blue;
+  font-size: 2em;
 }

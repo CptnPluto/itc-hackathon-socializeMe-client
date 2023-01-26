@@ -6,6 +6,8 @@ import skyline from "../../images/skyline.avif";
 import location from "../../images/location.svg";
 import activities from "../../images/activities.svg";
 import newEx from "../../images/newEx.svg";
+import ButtonCustom from "../../components/Button/ButtonCustom";
+import Typewriter from "react-typewriter";
 
 export default function LandingPage() {
   let navigate = useNavigate();
@@ -25,9 +27,20 @@ export default function LandingPage() {
           />
         </div>
       </div>
-      <h3 className="welcome">
-        Welcome to SocializeMe - You Dont Knoe What You Dont Know...But We Do
-      </h3>
+      <div className="welcome">
+        <h3>Welcome to SocializeMe</h3>
+        <h4>You Dont Know What You Dont Know...</h4>
+        <h3>But we do</h3>
+      </div>
+      <Typewriter
+        className="typewriter - effect"
+        options={{
+          strings: ["...But We Do"],
+          autoStart: true,
+          delay: 40,
+        }}
+      />
+
       <div className="svg">
         <div className="homeDiv">
           {" "}
@@ -44,10 +57,7 @@ export default function LandingPage() {
           <span className="homespan">Discover New Cultural Experiences</span>
         </div>
       </div>
-
-      <div className="startButton">
-        <button onClick={handleNavigate}>Start</button>
-      </div>
+      <ButtonCustom buttonText={"Let's Go"} callback={handleNavigate} />
     </>
   );
 }
