@@ -1,0 +1,39 @@
+#categories {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  margin: 10px;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+#eventInfo-main {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: content;
+  padding-top: 2%;
+}
+
+#eventInfo-main p {
+  margin: 0;
+}
+
+#eventInfo-sub {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cardLink {
+  display: flex;
+  justify-content: center;
+}
+
+#cardLink button {
+  background-color: rgb(59, 194, 149);
+  border: none;
+  border-radius: 10px;
+}
+
+#cardLink a {
+  text-decoration: none;
+}

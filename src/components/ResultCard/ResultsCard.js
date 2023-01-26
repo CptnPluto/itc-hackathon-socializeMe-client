@@ -1,23 +1,23 @@
 import React from "react";
+import "./ResultsCard.css";
 
 export default function ResultsCard(result) {
-  console.log(result);
+  console.log("pppp", result);
   return (
-    <div id="resultCardContainer">
-      <div id="categories">
-        <div id="eventInfo">
-          <h3>Name</h3>
-          <h3>Category</h3>
-          <h3>Date</h3>
-        </div>
-        <div>
-          <h3>Date</h3>
-          <h3>Time</h3>
-          <h3>Info</h3>
-        </div>
-        <div id="cardLink">
-          <button>URL</button>
-        </div>
+    <div id="categories">
+      <div id="eventInfo-main">
+        <p>{result.name}</p>
+        <p>category: {result.category}</p>
+      </div>
+      <div id="eventInfo-sub">
+        <p>{result.time}</p>
+        <p>{result.date}</p>
+        <p>Genre: {result.genre}</p>
+      </div>
+      <div id="cardLink">
+        <button>
+          <a href={result.url}>Go To Website</a>
+        </button>
       </div>
     </div>
   );

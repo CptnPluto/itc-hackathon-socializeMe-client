@@ -7,17 +7,50 @@ export default function ResultsContextProvider({ children }) {
   const [originCity, setOriginCity] = useState();
   const [category, setCategory] = useState();
   const [destinationCity, setDestinationCity] = useState();
-  const [resultsList, setResultsList] = useState();
+  const [resultsList, setResultsList] = useState([]);
 
-  const getResultsByCity = async (city) => {
+  const getResultsByCity = async () => {
     try {
-      const res = await axios.get(`https://itc-hackathon-socialize-me-server.vercel.app/events/ds/1/NYC`);
+      const res = await axios.get(
+        `https://itc-hackathon-socialize-me-server.vercel.app/events/cityEvents/NYC/Music`
+      );
       console.log(res.data, "test");
       setResultsList(res.data);
     } catch (error) {
       console.log(error);
     }
   };
+  //   setResultsList([
+  //     {
+  //       name: "ROCKON",
+  //       desctiption: "blabla",
+  //       category: "rock",
+  //       venue: "ITC",
+  //       address: "bla",
+  //       date: "20.03.2022",
+  //       url: "www.google.com",
+  //     },
+  //     {
+  //       name: "ROCKON",
+  //       desctiption: "blabla",
+  //       category: "rock",
+  //       venue: "ITC",
+  //       address: "bla",
+  //       date: "20.03.2022",
+  //       url: "www.google.com",
+  //     },
+  //     {
+  //       name: "ROCKON",
+  //       desctiption: "blabla",
+  //       category: "rock",
+  //       venue: "ITC",
+  //       address: "bla",
+  //       date: "20.03.2022",
+  //       url: "www.google.com",
+  //     },
+  //   ]);
+  // };
+  // console.log("gilad", resultsList);
 
   // const doTest = async () => {
   //     console.log("testing");
@@ -47,7 +80,15 @@ export default function ResultsContextProvider({ children }) {
 
   return (
     <ResultsContext.Provider
-      value={{ resultsList, originCity, setOriginCity, category, setCategory, destinationCity, setDestinationCity }}
+      value={{
+        resultsList,
+        originCity,
+        setOriginCity,
+        category,
+        setCategory,
+        destinationCity,
+        setDestinationCity,
+      }}
     >
       {children}
     </ResultsContext.Provider>
