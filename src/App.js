@@ -7,13 +7,13 @@ import ChooseEventPage from "./pages/ChooseEventPage/ChooseEventPage";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LocationPage from "./pages/LocationsPage/LocationPage";
 import LocationPageTo from "./pages/LocationsPage/LocationPageTo";
-import ResultsPAge from "./pages/ResultsPage/ResultsPAge";
+import ResultsPage from "./pages/ResultsPage/ResultsPage";
 import "./App.css";
 import ResultsContextProvider from "./context/ResultsContext";
 
 //For testing login and signup
-import Login from "./components/Login"
-import Signup from "./components/Signup"
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
     const [show, setShow] = useState(false);
@@ -37,7 +37,7 @@ function App() {
                     <Route path="/chooseLocation" element={<LocationPage />} />
                     <Route path="/chooseCategory" element={<CategoryPage />} />
                     <Route path="/chooseEvent" element={<ChooseEventPage />} />
-                    <Route path="/results" element={<ResultsPAge />} />
+                    <Route path="/results" element={<ResultsPage />} />
                     {/* These two paths are for testing - we will probably change how we handle login and signup */}
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
