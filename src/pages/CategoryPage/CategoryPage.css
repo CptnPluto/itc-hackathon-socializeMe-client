@@ -13,7 +13,8 @@
   gap: 15px;
 }
 .btn {
-    background: lightblue;
+  filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.36));
+  background: rgb(240 252 255);
   padding: 0 0 5px 0;
   display: flex;
   flex-direction: column;
